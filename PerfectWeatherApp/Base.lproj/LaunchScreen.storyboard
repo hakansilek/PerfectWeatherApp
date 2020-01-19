@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="y11-gR-iGp">
+                                <rect key="frame" x="0.0" y="309.5" width="414" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-fL-AS5">
+                                        <rect key="frame" x="0.0" y="-0.5" width="73" height="100.5"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="cloud.rain.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IDL-bl-YUj">
+                                        <rect key="frame" x="114" y="0.0" width="72.5" height="101.5"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="snow" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="u09-R1-itc">
+                                        <rect key="frame" x="227.5" y="2" width="73" height="96.5"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="wind" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="chr-6e-NsO">
+                                        <rect key="frame" x="341.5" y="2" width="72.5" height="97"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8mS-SV-XGL"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PerfectWeatherApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmY-W8-9PZ">
+                                <rect key="frame" x="41.5" y="429.5" width="331.5" height="47.5"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EmY-W8-9PZ" firstAttribute="top" secondItem="y11-gR-iGp" secondAttribute="bottom" constant="20" id="9kQ-7f-m6e"/>
+                            <constraint firstItem="EmY-W8-9PZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YTM-12-qE7"/>
+                            <constraint firstItem="y11-gR-iGp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bB2-pb-v3F"/>
+                            <constraint firstItem="EmY-W8-9PZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dQQ-jZ-bwu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y11-gR-iGp" secondAttribute="trailing" id="lId-oB-7Sx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-326.08695652173918" y="375.66964285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud.rain.fill" catalog="system" width="64" height="62"/>
+        <image name="snow" catalog="system" width="60" height="64"/>
+        <image name="sun.max.fill" catalog="system" width="64" height="62"/>
+        <image name="wind" catalog="system" width="64" height="50"/>
+    </resources>
+</document>
